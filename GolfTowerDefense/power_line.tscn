@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://de7811qsbxwbk"]
+
+[node name="ballLine" type="Line2D"]
+points = PackedVector2Array(0, 0, 0, 0)

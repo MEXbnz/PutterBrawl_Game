@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfvhbdm88akxk"]
+
+[ext_resource type="Script" path="res://borders.gd" id="1_3d4uu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fls0k"]
+size = Vector2(5, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6r5jl"]
+size = Vector2(576, 5)
+
+[node name="borders" type="Node"]
+script = ExtResource("1_3d4uu")
+
+[node name="left" type="Area2D" parent="."]
+position = Vector2(2, 136)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left"]
+position = Vector2(-5, 24)
+shape = SubResource("RectangleShape2D_fls0k")
+
+[node name="top" type="Area2D" parent="."]
+position = Vector2(272, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top"]
+position = Vector2(16, -5)
+shape = SubResource("RectangleShape2D_6r5jl")
+
+[node name="right" type="Area2D" parent="."]
+position = Vector2(574, 136)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right"]
+position = Vector2(2.5, 24)
+shape = SubResource("RectangleShape2D_fls0k")
+
+[node name="bottom" type="Area2D" parent="."]
+position = Vector2(272, 320)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottom"]
+position = Vector2(16, 2.5)
+shape = SubResource("RectangleShape2D_6r5jl")
+
+[connection signal="body_entered" from="left" to="." method="_on_left_body_entered"]
+[connection signal="body_entered" from="top" to="." method="_on_top_body_entered"]
+[connection signal="body_entered" from="right" to="." method="_on_right_body_entered"]
+[connection signal="body_entered" from="bottom" to="." method="_on_bottom_body_entered"]

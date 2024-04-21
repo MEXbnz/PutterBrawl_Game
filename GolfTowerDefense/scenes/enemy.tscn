@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3tyixmuxfcx3"]
+
+[ext_resource type="Script" path="res://scenes/enemy.gd" id="1_pjv17"]
+[ext_resource type="Texture2D" uid="uid://dwpou23t07mkl" path="res://assets/BadBall.png" id="2_221mc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5w040"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_doy13"]
+
+[node name="enemy" type="CharacterBody2D"]
+light_mask = 2
+visibility_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_pjv17")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_221mc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.775, 0.775)
+shape = SubResource("CircleShape2D_5w040")
+debug_color = Color(0.929412, 0.486275, 0.419608, 0.419608)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 10.0
+path_max_distance = 20.0
+path_postprocessing = 1
+avoidance_enabled = true
+radius = 12.0
+neighbor_distance = 16.0
+max_speed = 15.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CircleShape2D_doy13")
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

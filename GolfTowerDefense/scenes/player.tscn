@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2reanc87vqve"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_h8xx7"]
+[ext_resource type="Texture2D" uid="uid://1rrqij2x12yu" path="res://assets/GolfBall.png" id="2_mqyr6"]
+[ext_resource type="Texture2D" uid="uid://cpy5wjm35fj2c" path="res://assets/mouseArea.png" id="3_4o33f"]
+[ext_resource type="Texture2D" uid="uid://d32cs2xkk80tj" path="res://assets/mouseDot.png" id="4_7qyu5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vuuoa"]
+
+[node name="player" type="CharacterBody2D"]
+disable_mode = 2
+script = ExtResource("1_h8xx7")
+
+[node name="ball_sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_mqyr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.775, 0.775)
+shape = SubResource("CircleShape2D_vuuoa")
+
+[node name="mouse_sprites" type="Node" parent="."]
+
+[node name="mouse_area" type="Sprite2D" parent="mouse_sprites"]
+visible = false
+modulate = Color(1, 1, 1, 0.490196)
+texture_filter = 1
+scale = Vector2(6.25, 6.25)
+texture = ExtResource("3_4o33f")
+
+[node name="mouse_dot" type="Sprite2D" parent="mouse_sprites"]
+visible = false
+modulate = Color(1, 1, 1, 0.490196)
+z_index = 1
+scale = Vector2(6.25, 6.25)
+texture = ExtResource("4_7qyu5")
