@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://b2reanc87vqve" path="res://scenes/player.tscn" id="1_gdmai"]
 [ext_resource type="PackedScene" uid="uid://bnxjds3g30gyd" path="res://scenes/hole.tscn" id="3_3q58p"]
-[ext_resource type="PackedScene" uid="uid://de7811qsbxwbk" path="res://power_line.tscn" id="3_y33yg"]
-[ext_resource type="Texture2D" uid="uid://cxu3lfdce7of" path="res://golfGround_tileset.png" id="4_11qfi"]
-[ext_resource type="Script" path="res://scenes/gameManager.gd" id="4_n5is0"]
-[ext_resource type="PackedScene" uid="uid://idwyfolf66mc" path="res://ui.tscn" id="8_f6bfl"]
-[ext_resource type="PackedScene" uid="uid://dbjwjbhjjcuiw" path="res://enemy_spawner.tscn" id="8_mixxp"]
+[ext_resource type="PackedScene" uid="uid://de7811qsbxwbk" path="res://scenes/power_line.tscn" id="3_y33yg"]
+[ext_resource type="Texture2D" uid="uid://cxu3lfdce7of" path="res://assets/golfGround_tileset.png" id="4_11qfi"]
+[ext_resource type="Script" path="res://scripts/gameManager.gd" id="4_n5is0"]
+[ext_resource type="PackedScene" uid="uid://idwyfolf66mc" path="res://scenes/ui.tscn" id="8_f6bfl"]
+[ext_resource type="PackedScene" uid="uid://dbjwjbhjjcuiw" path="res://scenes/enemy_spawner.tscn" id="8_mixxp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5emfk"]
 bounce = 0.75

@@ -17,8 +17,8 @@ func _physics_process(delta):
 	mouse_position = get_global_mouse_position()
 	power = (mp_1 - mp_2)
 	
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 	var collision = move_and_collide(velocity * delta)
 	if collision:

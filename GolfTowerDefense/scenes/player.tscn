@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b2reanc87vqve"]
 
-[ext_resource type="Script" path="res://scenes/player.gd" id="1_h8xx7"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_h8xx7"]
 [ext_resource type="Texture2D" uid="uid://1rrqij2x12yu" path="res://assets/GolfBall.png" id="2_mqyr6"]
-[ext_resource type="Texture2D" uid="uid://cpy5wjm35fj2c" path="res://assets/mouseArea.png" id="3_4o33f"]
+[ext_resource type="Texture2D" uid="uid://ivex4efbsnw7" path="res://assets/mouseArea.png" id="3_4o33f"]
 [ext_resource type="Texture2D" uid="uid://d32cs2xkk80tj" path="res://assets/mouseDot.png" id="4_7qyu5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vuuoa"]

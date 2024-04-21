@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3tyixmuxfcx3"]
 
-[ext_resource type="Script" path="res://scenes/enemy.gd" id="1_pjv17"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_o7k4b"]
 [ext_resource type="Texture2D" uid="uid://dwpou23t07mkl" path="res://assets/BadBall.png" id="2_221mc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5w040"]
@@ -12,7 +12,7 @@ light_mask = 2
 visibility_layer = 2
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_pjv17")
+script = ExtResource("1_o7k4b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

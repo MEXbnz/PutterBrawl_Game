@@ -5,4 +5,5 @@ res://scenes/enemy.tscn
 res://scenes/hole.tscn
 res://enemy_spawner.tscn
 res://ui.tscn
-res://scenes/enemy.gd
+res://scenes/enemy_spawner.tscn
+res://scenes/ui.tscn

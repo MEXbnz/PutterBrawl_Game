@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfvhbdm88akxk"]
 
-[ext_resource type="Script" path="res://borders.gd" id="1_3d4uu"]
+[ext_resource type="Script" path="res://scripts/borders.gd" id="1_3d4uu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fls0k"]
 size = Vector2(5, 320)
