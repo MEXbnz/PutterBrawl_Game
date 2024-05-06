@@ -16,3 +16,4 @@ func health_change(change):
 func score_change(change):
 	score += change * multiplier
 	scoreCounter.text = "Score: " + str(score)
+	print(multiplier)

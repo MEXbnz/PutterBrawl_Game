@@ -15,9 +15,12 @@ script = ExtResource("1_h8xx7")
 texture_filter = 1
 texture = ExtResource("2_mqyr6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="player_collision" type="CollisionShape2D" parent="."]
 scale = Vector2(0.775, 0.775)
 shape = SubResource("CircleShape2D_vuuoa")
+
+[node name="player_camera" type="Camera2D" parent="."]
+zoom = Vector2(2.08, 2.08)
 
 [node name="mouse_sprites" type="Node" parent="."]
 
