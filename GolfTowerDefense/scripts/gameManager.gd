@@ -9,6 +9,8 @@ var hp = 100
 var score = 0
 var multiplier = 1.0
 
+
+
 func health_change(change):
 	hp += change
 	health.text = "Health: " + str(hp)

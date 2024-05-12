@@ -21,6 +21,8 @@ shape = SubResource("CircleShape2D_vuuoa")
 
 [node name="player_camera" type="Camera2D" parent="."]
 zoom = Vector2(2.08, 2.08)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
 
 [node name="mouse_sprites" type="Node" parent="."]
 

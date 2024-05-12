@@ -1,8 +1,8 @@
 res://scenes/main.tscn
 res://scenes/player.tscn
 res://scenes/enemy.tscn
-res://scenes/hole.tscn
 res://scenes/enemy_spawner.tscn
-res://scenes/ui.tscn
-res://scripts/enemy.gd
+res://scripts/player.gd
 res://scripts/gameManager.gd
+res://scripts/enemy.gd
+res://scripts/enemy_spawner.gd
